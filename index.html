@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads Rápidos VIPVIP - Júnior Souza</title>
+
+    <!-- Link para o Google Fonts (fonte moderna) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Link para o Bootstrap 4.5 (para layout e botões modernos) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        .container {
+            max-width: 900px;
+            margin-top: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #343a40;
+        }
+        .header h1 {
+            font-size: 40px;
+            font-weight: 700;
+            color: #007bff;
+        }
+        .header p {
+            font-size: 20px;
+            color: #666;
+            margin-top: 10px;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border-radius: 30px;
+            padding: 12px 25px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .card {
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .card-body {
+            padding: 30px;
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .form-group label {
+            font-weight: 600;
+        }
+        .form-control {
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .alert {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        .btn-link {
+            color: #007bff;
+            font-size: 18px;
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .btn-link:hover {
+            text-decoration: none;
+            color: #0056b3;
+        }
+        iframe {
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        #downloads-section a {
+            display: block;
+            margin-bottom: 17px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Cabeçalho da plataforma -->
+    <div class="header">
+        <h1>Downloads Rápidos VIPVIP</h1>
+        <p>Plataforma de Downloads rápidos e de fácil acesso! - Júnior Souza</p>
+    </div>
+
+    <!-- Formulário de cadastro -->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Cadastre-se para Começar</h5>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="email">E-mail (apenas @gmail.com):</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                    <small id="email-error" class="form-text text-danger" style="display: none;">Por favor, insira um e-mail válido do Gmail.</small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn btn-custom">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Interações com o YouTube -->
+    <div class="section-title">
+        <p>Interaja com o Canal para liberar os downloads</p>
+    </div>
+
+    <div id="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/tZKXvCzdG5s" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Passo 1: Apoiar o canal -->
+    <div id="step1">
+        <button id="like-btn" class="btn btn-custom">Apoiar o Canal</button>
+    </div>
+
+    <!-- Passo 2: Curtir o vídeo -->
+    <div id="step2" style="display: none;">
+        <button id="subscribe-btn" class="btn btn-custom">Curtir o Vídeo</button>
+    </div>
+
+    <!-- Passo 3: Comentar a opinião -->
+    <div id="step3" style="display: none;">
+        <button id="comment-btn" class="btn btn-custom">Comentar sua Opinião</button>
+    </div>
+
+    <hr>
+
+    <!-- Seção de downloads -->
+    <div class="section-title">
+        <p>Links para Downloads (liberados após 60 segundos)</p>
+    </div>
+
+    <div id="downloads-section">
+        <a href="https://www.mediafire.com/file/hzfb2te9v4w0ufr/REGEDIT_ESPECIAL_ANO_NOVO_2025.zip/file" id="download1" class="btn-link" style="display: none;" target="_blank">REGEDIT ESPECIAL ANO NOVO 2025</a>
+        <a href="https://example.com/download/arquivo2.zip" id="download2" class="btn-link" style="display: none;" target="_blank">Download do Arquivo 2</a>
+        <a href="https://example.com/download/arquivo3.zip" id="download3" class="btn-link" style="display: none;" target="_blank">Download do Arquivo 3</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    // Função para validar e-mail (somente Gmail)
+    function isValidGmail(email) {
+        const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        return gmailRegex.test(email);
+    }
+
+    // Função que será executada quando o formulário for enviado
+    $('#signup-form').on('submit', function(event) {
+        event.preventDefault();  // Impede o envio normal do formulário
+
+        const email = $('#email').val();
+        const password = $('#password').val();
+
+        if (!isValidGmail(email)) {
+            // Se o e-mail não for do Gmail, exibe a mensagem de erro
+            $('#email-error').show();
+        } else {
+            // Simula o processo de cadastro
+            $('#email-error').hide();
+            alert('Cadastro realizado com sucesso!');
+            // Libera o botão de "Apoiar o Canal"
+            $('#step1').show();
+        }
+    });
+
+    // Funções de interação com o YouTube
+    $('#like-btn').on('click', function() {
+        window.open('https://www.youtube.com.br/@Dengs3/', '_blank'); // Redireciona para o canal
+        $('#step1').hide();
+        $('#step2').show();  // Exibe o botão de "Curtir"
+    });
+
+    $('#subscribe-btn').on('click', function() {
+        window.open('https://www.youtube.com/watch?v=tZKXvCzdG5s', '_blank'); // Redireciona para o vídeo
+        $('#step2').hide();
+        $('#step3').show();  // Exibe o botão de "Comentar"
+    });
+
+    $('#comment-btn').on('click', function() {
+        window.open('https://www.youtube.com/watch?v=tZKXvCzdG5s', '_blank'); // Redireciona para o vídeo
+        $('#step3').hide();
+        // Após a interação completa, aguarda 60 segundos
+        alert('Agora aguarde 60 segundos para os downloads serem liberados!');
+        setTimeout(function() {
+            // Após 60 segundos, libera os botões de download
+            $('#download1').show();
+            $('#download2').show();
+            $('#download3').show();
+        }, 60000);  // 60 segundos
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
